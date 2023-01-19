@@ -13,7 +13,7 @@ lemmatizer = nltk.stem.WordNetLemmatizer()
 st.set_page_config(layout="wide")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-df = pd.read_csv('listings.csv')
+df = pd.read_csv('./listings.csv')
 
 df['description'] = df['description'].fillna('Unknown')
 
