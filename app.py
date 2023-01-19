@@ -89,7 +89,7 @@ df_selection = df_selection[df_selection['room_type'].isin(options)]
 
 
 # calculate how it grows over time
-df_response = df_selection.groupby('grade')['host_response_rate'].count()
+df_response = df_selection.groupby('host_since_date')['host_response_rate'].count()
 df_timeline = df_selection.groupby('host_since_date')['host_response_rate'].count().cumsum()
 
 col1, col2 = st.columns(2)
