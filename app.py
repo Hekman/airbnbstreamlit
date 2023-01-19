@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import re
 import string
 import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 lemmatizer = nltk.stem.WordNetLemmatizer()
 
